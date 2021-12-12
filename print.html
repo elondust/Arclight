@@ -136,31 +136,25 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p>The crosvm project is a hosted (a.k.a.
-<a href="https://en.wikipedia.org/wiki/Hypervisor#Classification">type-2</a>) virtual
+<p>The Arclight project is a hosted (a.k.a.
+<a href="https://en.wikipedia.org/wiki/Hypervisor#Classification">type-1</a>) virtual
 machine monitor.</p>
-<p>crosvm runs untrusted operating systems along with virtualized devices.
-Initially intended to be used with KVM and Linux, crosvm supports multiple kinds
-of hypervisors. crosvm is focussed on safety within the programming language and
-a sandbox around the virtual devices to protect the host from attack in case of
-exploits in crosvm itself.</p>
-<p>Other programs similar to crosvm are QEMU and VirtualBox. An operating system,
-made of a root file system image and a kernel binary, are given as input to
-crosvm and then crosvm will run the operating system using the platform's
-hypervisor.</p>
+<p>Arclight is a server virtualization management solution based on KVM. It is designed to be a easy-to-use management platform allowing users to create and manage virtual machines (VMs) on Linux servers. Arclight utilizes the Libvirt API, All of the actions you would expect from a virtualization management tool are included in the software. For example, user can create, clone and manage VMs, storage pools networks and volumes. When it comes to networking, there are multiple options available. Users create private networks for there VMs and have the option to control DHCP within the private network. In addition to private networks, VMs can also use bridged connections, connecting them directly to the network interfaces on the physical server. Manage virtual machines directly from Arclight. There is no need to install additional VNC software. [About this project]: This project is in-development and we are still adding features to it along with complete ISO package and APIs for Enterprise Usage. </p>
+<p></p>
 <ul>
-<li><a href="https://chromium.googlesource.com/chromiumos/platform/crosvm/">Source code</a>
+<li><a>Source code</a>
 <ul>
-<li><a href="https://github.com/google/crosvm">GitHub mirror</a></li>
-<li><a href="https://google.github.io/crosvm/doc/crosvm/">API documentation</a>, useful
+<li><a href="https://github.com/Chatnaut/Arclight">GitHub mirror</a></li>
+<li><a href="https://google.github.io/Arclight-docs/">API documentation</a>, useful
 for searching API.</li>
-<li>Files for this book are under
-<a href="https://chromium.googlesource.com/chromiumos/platform/crosvm/+/HEAD/docs/">/docs/</a>.</li>
+<li>Full Documentation
+<a href="https://google.github.io/Arclight-docs/">/docs/</a>.</li>
 </ul>
 </li>
-<li><a href="https://bugs.chromium.org/p/chromium/issues/list?q=component:OS%3ESystems%3EContainers">Issue tracker</a></li>
+<li><a href="https://github.com/Chatnaut/Arclight/issues">Issue tracker</a></li>
 </ul>
-<p><img src="./logo.svg" alt="logo" /></p>
+<p><img src="https://i.imgur.com/G6y7Qov.png" alt="logo" /></p>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <div style="break-before: page; page-break-before: always;"></div><h1 id="building-crosvm"><a class="header" href="#building-crosvm">Building Crosvm</a></h1>
 <p>This chapter includes how to set up crosvm on each platform.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="building-for-linux"><a class="header" href="#building-for-linux">Building for Linux</a></h1>
